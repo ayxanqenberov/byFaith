@@ -39,6 +39,10 @@ header .header-part .menu nav a {
   color: #FFFFE9;
   font-size: 15px;
 }
+header .header-part .menu nav a:hover {
+  transition: all 0.5s;
+  color: #f79918;
+}
 
 #home-sect {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/image/bgimg_1.jpg);
@@ -148,7 +152,6 @@ header .header-part .menu nav a {
 }
 #about-us .container .left-about-us span {
   color: #f79918;
-  text-transform: uppercase;
 }
 #about-us .container .left-about-us button {
   background-color: #f79918;
@@ -304,20 +307,25 @@ header .header-part .menu nav a {
 #servise .church-servise .bottom-servise .servises {
   text-align: center;
   line-height: 1.5;
-  display: block;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 #servise .church-servise .bottom-servise .servises p {
+  color: #5F6774;
   width: 350px;
   padding: 10px;
 }
-#servise .church-servise .bottom-servise .servises i {
-  color: #f79918;
-  font-size: 10px;
+#servise .church-servise .bottom-servise .servises a {
+  color: #0e0f10;
+  text-transform: uppercase;
 }
-#servise .church-servise .bottom-servise .servises span {
+#servise .church-servise .bottom-servise .servises a:hover {
+  transition: all 0.5s;
   color: #f79918;
-  padding: 20px;
 }
 
 #contact .content-contact {
@@ -355,38 +363,103 @@ header .header-part .menu nav a {
   transition: all 0.9s;
 }
 
-#foter {
+footer {
   width: 100%;
 }
-#foter .footer-part {
+footer .footer-part {
   background-color: #EDE2D0;
   width: 100%;
   height: 440px;
   display: flex;
   align-items: center;
 }
-#foter .footer-part .top-footer {
+footer .footer-part .top-footer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 30px;
 }
-#foter .footer-part .top-footer a {
+footer .footer-part .top-footer div {
+  height: 100px;
+}
+footer .footer-part .top-footer a {
   color: #5F6774;
 }
-#foter .footer-part .top-footer .contact-f div {
+footer .footer-part .top-footer .contact-f {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-part .top-footer .contact-f h4 {
+  text-transform: uppercase;
+  color: #0e0f10;
+  letter-spacing: 3px;
+}
+footer .footer-part .top-footer .contact-f div {
   display: flex;
   flex-direction: column;
 }
-#foter .footer-part .top-footer .sources {
+footer .footer-part .top-footer .contact-f div a:hover {
+  transition: all 0.5s;
+  color: #f79918;
+}
+footer .footer-part .top-footer .sources {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
-#foter .footer-part .top-footer .sources .first {
+footer .footer-part .top-footer .sources h4 {
+  text-transform: uppercase;
+  color: #0e0f10;
+  letter-spacing: 3px;
+}
+footer .footer-part .top-footer .sources .first {
   display: flex;
   gap: 30px;
+}
+footer .footer-part .top-footer .sources .first nav ul li a:hover {
+  transition: all 0.5s;
+  color: #f79918;
+}
+footer .footer-part .top-footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-part .top-footer .links h4 {
+  text-transform: uppercase;
+  color: #0e0f10;
+  letter-spacing: 3px;
+}
+footer .footer-part .top-footer .links nav ul li a:hover {
+  transition: all 0.5s;
+  color: #f79918;
+}
+footer .footer-part .top-footer .links .links-2-footer ul {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  gap: 15px;
+}
+footer .footer-part .top-footer .links .links-2-footer ul li {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+footer .footer-part .top-footer .links .links-2-footer ul li a {
+  color: #5F6774;
+}
+footer .footer-part .top-footer .links .links-2-footer ul li:hover {
+  transition: all 0.4s;
+  background-color: #f79918;
+}
+footer .footer-part .top-footer .links .links-2-footer ul li:hover a {
+  color: white;
 }
 
 @media (max-width: 992px) {

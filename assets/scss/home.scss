@@ -43,6 +43,10 @@ header {
                 a {
                     color: #FFFFE9;
                     font-size: 15px;
+                    &:hover{
+                        transition: all .5s;
+                        color: $orange;
+                    }
                 }
             }
         }
@@ -174,7 +178,6 @@ header {
 
             span {
                 color: $orange;
-                text-transform: uppercase;
             }
 
             button {
@@ -357,23 +360,26 @@ header {
             .servises {
                 text-align: center;
                 line-height: 1.5;
-                display: block;
+                height: 360px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 gap: 30px;
 
                 p {
+                    color: #5F6774;
                     width: 350px;
                     padding: 10px;
                 }
 
-                i {
-                    color: $orange;
-                    font-size: 10px;
-
-                }
-
-                span {
-                    color: $orange;
-                    padding: 20px;
+                a {
+                    color: #0e0f10;
+                    text-transform: uppercase;
+                    &:hover{
+                        transition: all .5s;
+                        color: $orange;
+                    }
                 }
             }
         }
@@ -422,7 +428,7 @@ header {
     }
 }
 
-#foter {
+footer {
     width: 100%;
 
     .footer-part {
@@ -437,27 +443,109 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            gap: 30px;
+            div{
+                height: 100px;
+            }
 
             a {
                 color: #5F6774;
             }
 
             .contact-f {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h4{
+                    text-transform: uppercase;
+                    color: #0e0f10;
+                    letter-spacing: 3px;
+                }
                 div {
                     display: flex;
                     flex-direction: column;
+                    a{
+                        &:hover{
+                            transition: all .5s;
+                            color: $orange;
+                        }
+                    }
                 }
             }
 
             .sources {
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
-
+                gap: 10px;
+                h4{
+                    text-transform: uppercase;
+                    color: #0e0f10;
+                    letter-spacing: 3px;
+                }
                 .first {
                     display: flex;
                     gap: 30px;
+                    nav{
+                        ul{
+                            li{
+                                a{
+                                    &:hover{
+                                        transition: all .5s;
+                                        color: $orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h4{
+                    text-transform: uppercase;
+                    color: #0e0f10;
+                    letter-spacing: 3px;
+                }
+                nav{
+                    ul{
+                        li{
+                            a{
+                                &:hover{
+                                    transition: all .5s;
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+                .links-2-footer{
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        padding-top: 10px;
+                        gap: 15px;
+                        li{
+                            background-color: white;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            a{
+                                color: #5F6774;
+                            }
+                            &:hover{
+                                transition: all .4s;
+                                background-color: #f79918;
+                                a{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
